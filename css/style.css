@@ -1,1 +1,10 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+header {
+  height: 200%;
+}
+
+.logo {
+  margin-left: 24%;
+  margin-top: 3%;
+  width: 50%;
+}
+/*# sourceMappingURL=style.css.map */
