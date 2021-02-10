@@ -23,13 +23,13 @@
 
     <!-- Partie pour la réservation -->
     <div class="reservation">
-        <h1>
+        <h1 class="reservation__title">
             Réservez le menu qui vous convient
         </h1>
         <p> Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
 
         <!-- Bouton pour découvrir les restaurants-->
-        <a href="#"> Explore nos restaurants</a>
+        <a class="reservation__btn" href="#"> Explore nos restaurants</a>
     </div>
 
     <!--Fonctionnement de l'application-->
@@ -37,22 +37,22 @@
         <h2> Fonctionnement</h2>
 
         <!--Bouton choisissez votre restaurant-->
-        <a href="#" class="btn-restaurant">
-            <div class="number"> 1 </div>
+        <a href="#" class="operation__btn">
+            <div class="operation__number"> 1 </div>
             <i class="fas fa-mobile-alt"></i>
             choisissez un restaurant
         </a>
 
         <!--Bouton composez votre menu-->
-        <a href="#" class="btn-restaurant">
-            <div class="number"> 2 </div>
+        <a href="#" class="operation__btn">
+            <div class="operation__number"> 2 </div>
             <i class="fas fa-list"></i>
             Composez votre menu
         </a>
 
         <!--Bouton dégustez aux restaurants-->
-        <a href="#" class="btn-restaurant">
-            <div class="number"> 3 </div>
+        <a href="#" class="operation__btn">
+            <div class="operation__number"> 3 </div>
             <i class="fas fa-store"></i>
             Dégustez aux restaurants
         </a>
@@ -62,16 +62,20 @@
     <section>
 
         <!--Box des resrtaurants-->
-        <div class="background img"> </div>
-        <div class="description">
+        <div class="background img"> 
+            <div class="new"> Nouveau </div>
+        </div>
+        <div class="background__description">
             <h3> La palette du goût</h3>
             <p> Ménilmontant</p>
             <i class="far fa-heart"></i>
         </div>
 
         <!--Box palette du goût-->
-        <div class="background img-1"> </div>
-        <div class="description">
+        <div class="background img-1"> 
+            <div class="new"> Nouveau </div>
+        </div>
+        <div class="background__description">
             <h3> La note enchantée</h3>
             <p> Charonne</p>
             <i class="far fa-heart"></i>
@@ -79,7 +83,7 @@
 
         <!--Box note enchantée-->
         <div class="background img-2"> </div>
-        <div class="description">
+        <div class="background__description">
             <h3> A la française</h3>
             <p> Cité Rouge</p>
             <i class="far fa-heart"></i>
@@ -87,7 +91,7 @@
 
         <!--A la française-->
         <div class="background img-3"> </div>
-        <div class="description">
+        <div class="background__description">
             <h3> Le délice des sens</h3>
             <p> Folie-Méricourt</p>
             <i class="far fa-heart"></i>
