@@ -1,10 +1,47 @@
-header {
-  height: 200%;
+body {
+  margin: 0%;
+  font-family: "Shrikhand";
+  font-family: "Roboto";
 }
 
 .logo {
   margin-left: 24%;
   margin-top: 3%;
   width: 50%;
+}
+
+.localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  margin-top: 1%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #eaeaea;
+  width: auto;
+  -webkit-box-shadow: 0px 8px 7px -5px inset #d5d5d5;
+          box-shadow: 0px 8px 7px -5px inset #d5d5d5;
+}
+
+.localisation .fas {
+  margin-left: -11%;
+  margin-right: 3%;
+}
+
+.localisation p {
+  margin-left: 2%;
+  font-family: "Roboto";
+  font-weight: 800;
+}
+
+.reservation {
+  background-color: #f6f6f6;
 }
 /*# sourceMappingURL=style.css.map */
