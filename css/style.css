@@ -130,6 +130,12 @@ body {
 
 .restaurant {
   background-color: #f6f6f6;
+  height: 1102px;
+}
+
+.restaurant h2 {
+  margin-left: 6%;
+  padding-top: 7%;
 }
 
 .restaurant .background {
@@ -175,6 +181,31 @@ body {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   margin: -10% 5% 5% 5%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.restaurant .background__description h3 {
+  position: absolute;
+  top: -7%;
+  font-size: 1em;
+  margin-left: 6%;
+}
+
+.restaurant .background__description p {
+  margin-top: 11%;
+  padding-left: 6%;
+}
+
+.restaurant .background__description .far {
+  position: absolute;
+  left: 83%;
+  top: 19%;
+  font-size: 2em;
 }
 
 .restaurant .new {
@@ -186,5 +217,37 @@ body {
   width: 20%;
   padding: 10px;
   font-weight: 800px;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  margin-bottom: 5%;
+  height: 230px;
+}
+
+footer .white-logo {
+  color: white;
+  margin-left: 5%;
+  margin-top: 5%;
+  width: 31%;
+}
+
+footer .food {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 5%;
+}
+
+footer .food p {
+  margin-left: 5%;
+}
+
+footer p {
+  margin-left: 5%;
 }
 /*# sourceMappingURL=style.css.map */
