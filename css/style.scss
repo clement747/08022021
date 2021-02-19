@@ -1,11 +1,14 @@
 $grey:#f6f6f6;
 $purple:#9356DC;
+
 body
 {
     margin: 0%;
     font-family: "Shrikhand";
     font-family: "Roboto";
 }
+
+@import 'header';
 
 .localisation
 {
@@ -207,5 +210,38 @@ h2
  }
 }
 
-@import "footer";
+footer
+{
+    background-color:#353535;
+    color: white;
+    margin-bottom: 5%;
+    height: 230px;
 
+.white-logo
+    {
+    color: white;
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 31%;
+    }   
+.food
+    {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+
+    p
+        {
+    margin-left: 5%;
+        }
+    .fas
+    {
+        color: white;
+        margin-top: 3%;
+    }
+}
+p
+{
+margin-left: 5%;
+}    
+}
