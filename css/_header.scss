@@ -4,4 +4,10 @@
     margin-top: 3%;
     width: 50%;
     display: flex;
+
+    @media all and (min-width:900px) 
+    {
+            width: 25%;
+            margin-left: 578px;
+    }
 }

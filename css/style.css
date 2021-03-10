@@ -13,6 +13,13 @@ body {
   display: flex;
 }
 
+@media all and (min-width: 900px) {
+  .logo {
+    width: 25%;
+    margin-left: 578px;
+  }
+}
+
 .localisation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,10 +45,22 @@ body {
   margin-right: 3%;
 }
 
+@media all and (min-width: 900px) {
+  .localisation .fas {
+    margin-left: 0%;
+  }
+}
+
 .localisation p {
   margin-left: 2%;
   font-family: "Roboto";
   font-weight: 800;
+}
+
+@media all and (min-width: 900px) {
+  .localisation p {
+    margin-left: -2%;
+  }
 }
 
 .reservation {
@@ -75,11 +94,37 @@ body {
   border-radius: 50px;
   padding: 18px 37px;
   position: absolute;
-  left: 73px;
+  left: 65px;
+}
+
+@media all and (min-width: 900px) {
+  .reservation a {
+    left: 650px;
+  }
 }
 
 .operation {
   margin: 10%;
+}
+
+@media all and (min-width: 900px) {
+  .operation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0% 0% -7% 0%;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .operation h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0%;
+    padding: 2% 0% 2% 0%;
+  }
 }
 
 .operation .operation__btn {
@@ -93,6 +138,13 @@ body {
   border-radius: 15px;
   -webkit-box-shadow: 0px 13px 7px -5px #d5d5d5;
           box-shadow: 0px 13px 7px -5px #d5d5d5;
+}
+
+@media all and (min-width: 900px) {
+  .operation .operation__btn {
+    width: 20%;
+    margin-left: 10%;
+  }
 }
 
 .operation .operation__number {
@@ -136,9 +188,42 @@ body {
   height: 1102px;
 }
 
+@media all and (min-width: 900px) {
+  .restaurant {
+    height: 400px;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .restaurant .restaurant__choice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
 .restaurant h2 {
   margin-left: 6%;
   padding-top: 7%;
+}
+
+@media all and (min-width: 900px) {
+  .restaurant h2 {
+    width: 100%;
+    padding-top: 3%;
+    text-align: center;
+    margin: 0%;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .restaurant .restaurant__card {
+    width: 25%;
+    padding-top: 2%;
+  }
 }
 
 .restaurant .background {
@@ -190,6 +275,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  text-decoration: none;
+  color: black;
 }
 
 .restaurant .background__description h3 {
@@ -202,6 +289,7 @@ body {
 .restaurant .background__description p {
   margin-top: 11%;
   padding-left: 6%;
+  text-decoration: none;
 }
 
 .restaurant .background__description .far {
@@ -227,6 +315,16 @@ footer {
   color: white;
   margin-bottom: 5%;
   height: 230px;
+}
+
+@media all and (min-width: 900px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 footer .white-logo {
