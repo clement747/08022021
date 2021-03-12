@@ -1,6 +1,5 @@
 body {
   margin: 0%;
-  font-family: "Shrikhand";
   font-family: "Roboto";
 }
 
@@ -352,7 +351,8 @@ footer {
   }
 }
 
-footer .white-logo {
+footer .h3 {
+  font-family: "Shrikhand";
   color: white;
   margin-left: 5%;
   margin-top: 5%;
@@ -360,7 +360,7 @@ footer .white-logo {
 }
 
 @media all and (min-width: 992px) {
-  footer .white-logo {
+  footer .h3 {
     height: 20%;
     width: 15%;
     margin-top: 6%;

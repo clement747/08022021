@@ -4,7 +4,6 @@ $purple:#9356DC;
 body
 {
     margin: 0%;
-    font-family: "Shrikhand";
     font-family: "Roboto";
 }
 
@@ -327,8 +326,9 @@ footer
                     flex-wrap: wrap;
                 }
 
-        .white-logo
+        .h3
             {
+            font-family:"Shrikhand";
             color: white;
             margin-left: 5%;
             margin-top: 5%;

@@ -12,6 +12,12 @@ header
         width: 50%;
         margin-left: 19%;
         padding-bottom: 10px;
+
+        @media all and (min-width:992px) 
+        {
+                width: 25%;
+                margin-left: 578px;
+        }
         
     }
 }
@@ -33,6 +39,13 @@ header
     top: 40%;
     width: 100%;
 
+    @media all and (min-width:992px) 
+    {
+            top: 77%;
+            height: 600px;
+    }
+
+   
     .french__title
     {
         display: flex;
@@ -40,6 +53,13 @@ header
         position: relative;
         font-family: "Shrikhand";
         margin-left: 7%;
+
+        @media all and (min-width:992px) 
+        {
+               width: 100%;
+        }
+
+        
 
         .far
         {
@@ -49,61 +69,103 @@ header
             font-size: 2em;
         }
     }
-}
-
-h2
-{
-    text-transform: uppercase;
-    font-size: 1em;
-    margin-left: 5%;
-    text-decoration : underline #99e2d0;
-    font-family: "Roboto";
-}
-
-.french__descpription
-{
-    background-color: white;
-    width: 90%;
-    margin-left: 5%;
-    border-radius: 20px;
-    position: relative;
-    font-family: "Roboto";
-
-    h3
+    
+    .menu
     {
-        margin-left: 4%;
-        padding-top: 3%; 
-        font-size: 0.9em;
-        padding-bottom: 10px;
-        
+            @media all and (min-width:992px) 
+        {
+                display: flex;
+                flex-wrap: wrap;
+        }
+
     }
 
-    .french__price
-    {
-        display: flex;
-        margin-left: 4%;
-        margin-top: -10%;
-        font-size: 0.9em;
-    }
+        .entered
+            {
+                @media all and  (min-width: 992px)
+                {
+                    width: 25%;
+                    margin-left : 5%;
+                }  
+            }
 
-    .price
+            .dishes
+            {
+                @media all and  (min-width: 992px)
+                {
+                    width: 25%;
+                    margin-left : 5%;
+                }  
+            } 
+            .Desserts
+            {
+                    @media all and  (min-width: 992px)
+                    {
+                        width: 25%;
+                        margin-left : 5%;
+                    }   
+            }   
+
+            h2
+            {
+                text-transform: uppercase;
+                font-size: 1em;
+                margin-left: 5%;
+                text-decoration : underline #99e2d0;
+                font-family: "Roboto";
+            }
+
+
+            .french__descpription
+            {
+                background-color: white;
+                width: 90%;
+                margin-left: 5%;
+                border-radius: 20px;
+                position: relative;
+                font-family: "Roboto";
+
+            h3
+            {
+                margin-left: 4%;
+                padding-top: 3%; 
+                font-size: 0.9em;
+                padding-bottom: 10px;
+                
+            }
+
+            .french__price
+            {
+                display: flex;
+                margin-left: 4%;
+                margin-top: -10%;
+                font-size: 0.9em;
+            }
+
+            .price
+            {
+                position: absolute;
+                top: 10%;
+                left: 85%;
+            }
+    }    
+
+    a
     {
+        background: linear-gradient( -6deg, #9356DC, #FF79DA);
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        padding: 18px 37px;
         position: absolute;
-        top: 10%;
-        left: 85%;
+        left: 115px;
+        margin-top: 7%;
+
+        @media all and  (min-width: 992px)
+        {
+            margin-left: 50%;
+            margin-left: 33%;
+            font-size: 2em;
+        }   
     }
 }
-
-a
-{
-    background: linear-gradient( -6deg, #9356DC, #FF79DA);
-    color: white;
-    text-decoration: none;
-    border-radius: 50px;
-    padding: 18px 37px;
-    position: absolute;
-    left: 115px;
-    margin-top: 7%;
-}
-
-

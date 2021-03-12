@@ -17,6 +17,13 @@ header .logo {
   padding-bottom: 10px;
 }
 
+@media all and (min-width: 992px) {
+  header .logo {
+    width: 25%;
+    margin-left: 578px;
+  }
+}
+
 .fas {
   color: #353535;
   padding-bottom: 10px;
@@ -33,6 +40,13 @@ header .logo {
   width: 100%;
 }
 
+@media all and (min-width: 992px) {
+  .french {
+    top: 77%;
+    height: 600px;
+  }
+}
+
 .french .french__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,6 +57,12 @@ header .logo {
   margin-left: 7%;
 }
 
+@media all and (min-width: 992px) {
+  .french .french__title {
+    width: 100%;
+  }
+}
+
 .french .french__title .far {
   position: absolute;
   left: 80%;
@@ -50,7 +70,38 @@ header .logo {
   font-size: 2em;
 }
 
-h2 {
+@media all and (min-width: 992px) {
+  .french .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .french .entered {
+    width: 25%;
+    margin-left: 5%;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .french .dishes {
+    width: 25%;
+    margin-left: 5%;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .french .Desserts {
+    width: 25%;
+    margin-left: 5%;
+  }
+}
+
+.french h2 {
   text-transform: uppercase;
   font-size: 1em;
   margin-left: 5%;
@@ -59,7 +110,7 @@ h2 {
   font-family: "Roboto";
 }
 
-.french__descpription {
+.french .french__descpription {
   background-color: white;
   width: 90%;
   margin-left: 5%;
@@ -68,14 +119,14 @@ h2 {
   font-family: "Roboto";
 }
 
-.french__descpription h3 {
+.french .french__descpription h3 {
   margin-left: 4%;
   padding-top: 3%;
   font-size: 0.9em;
   padding-bottom: 10px;
 }
 
-.french__descpription .french__price {
+.french .french__descpription .french__price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,13 +135,13 @@ h2 {
   font-size: 0.9em;
 }
 
-.french__descpription .price {
+.french .french__descpription .price {
   position: absolute;
   top: 10%;
   left: 85%;
 }
 
-a {
+.french a {
   background: linear-gradient(-6deg, #9356DC, #FF79DA);
   color: white;
   text-decoration: none;
@@ -101,6 +152,14 @@ a {
   margin-top: 7%;
 }
 
+@media all and (min-width: 992px) {
+  .french a {
+    margin-left: 50%;
+    margin-left: 33%;
+    font-size: 2em;
+  }
+}
+
 .img-menu {
   background-image: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-position: center;
@@ -108,6 +167,12 @@ a {
   background-repeat: no-repeat;
   height: 249px;
   position: relative;
+}
+
+@media all and (min-width: 900px) {
+  .img-menu {
+    height: 500px;
+  }
 }
 
 footer {
