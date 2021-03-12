@@ -7,31 +7,36 @@ footer
     position: absolute;
     top:192%;
 
-.white-logo
+    .white-logo
     {
     color: white;
     margin-left: 5%;
     margin-top: 5%;
     width: 31%;
+
+    @media all and (min-width: 992px) 
+    {
+        height: 20%;
+    }
     }   
-.food
+    .food
     {
     display: flex;
     align-items: center;
     margin-left: 5%;
 
-    p
+        p
+            {
+        margin-left: 5%;
+            }
+        .fas
         {
-    margin-left: 5%;
+            color: white;
+            margin-top: 3%;
         }
-    .fas
-    {
-        color: white;
-        margin-top: 3%;
     }
-}
-p
-{
-margin-left: 5%;
-}    
+    p
+    {
+    margin-left: 5%;
+    }    
 }

@@ -130,6 +130,12 @@ footer .white-logo {
   width: 31%;
 }
 
+@media all and (min-width: 992px) {
+  footer .white-logo {
+    height: 20%;
+  }
+}
+
 footer .food {
   display: -webkit-box;
   display: -ms-flexbox;

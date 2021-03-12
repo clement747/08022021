@@ -45,7 +45,7 @@ body {
   margin-right: 3%;
 }
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 992px) {
   .localisation .fas {
     margin-left: 0%;
   }
@@ -57,7 +57,7 @@ body {
   font-weight: 800;
 }
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 992px) {
   .localisation p {
     margin-left: -2%;
   }
@@ -97,7 +97,7 @@ body {
   left: 65px;
 }
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 992px) {
   .reservation a {
     left: 650px;
   }
@@ -107,7 +107,7 @@ body {
   margin: 10%;
 }
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 992px) {
   .operation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -118,7 +118,7 @@ body {
   }
 }
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 992px) {
   .operation h2 {
     width: 100%;
     text-align: center;
@@ -140,7 +140,13 @@ body {
           box-shadow: 0px 13px 7px -5px #d5d5d5;
 }
 
-@media all and (min-width: 900px) {
+.operation .operation__btn:hover {
+  background-color: #f5edff;
+  -webkit-box-shadow: 0px 13px 7px -5px #9356dc;
+          box-shadow: 0px 13px 7px -5px #9356dc;
+}
+
+@media all and (min-width: 992px) {
   .operation .operation__btn {
     width: 20%;
     margin-left: 10%;
@@ -188,13 +194,13 @@ body {
   height: 1102px;
 }
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 992px) {
   .restaurant {
     height: 400px;
   }
 }
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 992px) {
   .restaurant .restaurant__choice {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -210,7 +216,7 @@ body {
   padding-top: 7%;
 }
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 992px) {
   .restaurant h2 {
     width: 100%;
     padding-top: 3%;
@@ -219,7 +225,7 @@ body {
   }
 }
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 992px) {
   .restaurant .restaurant__card {
     width: 25%;
     padding-top: 2%;
@@ -292,11 +298,30 @@ body {
   text-decoration: none;
 }
 
-.restaurant .background__description .far {
+.restaurant .background__description .heart {
   position: absolute;
   left: 83%;
   top: 19%;
   font-size: 2em;
+}
+
+.restaurant .background__description .empty:hover {
+  opacity: 0;
+}
+
+.restaurant .background__description .full {
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+
+.restaurant .background__description .full:hover {
+  opacity: 1;
 }
 
 .restaurant .new {
@@ -317,7 +342,7 @@ footer {
   height: 230px;
 }
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 992px) {
   footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -332,6 +357,14 @@ footer .white-logo {
   margin-left: 5%;
   margin-top: 5%;
   width: 31%;
+}
+
+@media all and (min-width: 992px) {
+  footer .white-logo {
+    height: 20%;
+    width: 15%;
+    margin-top: 6%;
+  }
 }
 
 footer .food {
@@ -355,5 +388,11 @@ footer .food .fas {
 
 footer p {
   margin-left: 5%;
+}
+
+@media all and (min-width: 992px) {
+  footer p {
+    margin-top: 6.5%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
