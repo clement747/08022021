@@ -59,7 +59,7 @@ header .logo {
 
 @media all and (min-width: 992px) {
   .french .french__title {
-    width: 100%;
+    width: 93%;
   }
 }
 
@@ -87,6 +87,20 @@ header .logo {
   }
 }
 
+.french .title {
+  border-bottom: 2px solid #99e2d0;
+  width: 20%;
+  margin-left: 21px;
+}
+
+.french .box__dishes {
+  width: 12.5%;
+}
+
+.french .box__desserts {
+  width: 21.5%;
+}
+
 @media all and (min-width: 992px) {
   .french .dishes {
     width: 25%;
@@ -105,9 +119,9 @@ header .logo {
   text-transform: uppercase;
   font-size: 1em;
   margin-left: 5%;
-  -webkit-text-decoration: underline #99e2d0;
-          text-decoration: underline #99e2d0;
   font-family: "Roboto";
+  margin-bottom: 2px;
+  font-weight: 300;
 }
 
 .french .french__descpription {
@@ -119,14 +133,201 @@ header .logo {
   font-family: "Roboto";
 }
 
-.french .french__descpription h3 {
+.french .fade_1 {
+  -webkit-animation: fade-in 1s;
+          animation: fade-in 1s;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+  100% {
+    -webkit-transform: scale(100%);
+            transform: scale(100%);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+  100% {
+    -webkit-transform: scale(100%);
+            transform: scale(100%);
+  }
+}
+
+.french .fade_2 {
+  -webkit-animation: fade-in 1.3s;
+          animation: fade-in 1.3s;
+}
+
+@keyframes fade-in {
+  0% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+  100% {
+    -webkit-transform: scale(100%);
+            transform: scale(100%);
+  }
+}
+
+.french .fade_3 {
+  -webkit-animation: fade-in 1.5s;
+          animation: fade-in 1.5s;
+}
+
+@keyframes fade-in {
+  0% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+  100% {
+    -webkit-transform: scale(100%);
+            transform: scale(100%);
+  }
+}
+
+.french .fade_4 {
+  -webkit-animation: fade-in 2s;
+          animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+  0% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+  100% {
+    -webkit-transform: scale(100%);
+            transform: scale(100%);
+  }
+}
+
+.french .fade_5 {
+  -webkit-animation: fade-in 2.5s;
+          animation: fade-in 2.5s;
+}
+
+@keyframes fade-in {
+  0% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+  100% {
+    -webkit-transform: scale(100%);
+            transform: scale(100%);
+  }
+}
+
+.french .fade_6 {
+  -webkit-animation: fade-in 3s;
+          animation: fade-in 3s;
+}
+
+@keyframes fade-in {
+  0% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+  100% {
+    -webkit-transform: scale(100%);
+            transform: scale(100%);
+  }
+}
+
+.french .fade_7 {
+  -webkit-animation: fade-in 3.5s;
+          animation: fade-in 3.5s;
+}
+
+@keyframes fade-in {
+  0% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+  100% {
+    -webkit-transform: scale(100%);
+            transform: scale(100%);
+  }
+}
+
+.french .fade_8 {
+  -webkit-animation: fade-in 4s;
+          animation: fade-in 4s;
+}
+
+@keyframes fade-in {
+  0% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+  100% {
+    -webkit-transform: scale(100%);
+            transform: scale(100%);
+  }
+}
+
+.french .fade_9 {
+  -webkit-animation: fade-in 4.5s;
+          animation: fade-in 4.5s;
+}
+
+@keyframes fade-in {
+  0% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+  100% {
+    -webkit-transform: scale(100%);
+            transform: scale(100%);
+  }
+}
+
+.french .fade_10 {
+  -webkit-animation: fade-in 5s;
+          animation: fade-in 5s;
+}
+
+@keyframes fade-in {
+  0% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+  100% {
+    -webkit-transform: scale(100%);
+            transform: scale(100%);
+  }
+}
+
+.french .fade_11 {
+  -webkit-animation: fade-in 5.5s;
+          animation: fade-in 5.5s;
+}
+
+@keyframes fade-in {
+  0% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+  }
+  100% {
+    -webkit-transform: scale(100%);
+            transform: scale(100%);
+  }
+}
+
+.french h3 {
   margin-left: 4%;
   padding-top: 3%;
   font-size: 0.9em;
   padding-bottom: 10px;
 }
 
-.french .french__descpription .french__price {
+.french .french__price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,13 +336,22 @@ header .logo {
   font-size: 0.9em;
 }
 
-.french .french__descpription .price {
+.french .price {
   position: absolute;
   top: 10%;
   left: 85%;
 }
 
-.french a {
+.french .check-box {
+  position: absolute;
+  top: 24%;
+  left: 96%;
+  font-size: 1.5em;
+  color: white;
+  opacity: 0;
+}
+
+a {
   background: linear-gradient(-6deg, #9356DC, #FF79DA);
   color: white;
   text-decoration: none;
@@ -153,7 +363,7 @@ header .logo {
 }
 
 @media all and (min-width: 992px) {
-  .french a {
+  a {
     margin-left: 50%;
     margin-left: 33%;
     font-size: 2em;
@@ -169,8 +379,20 @@ header .logo {
   position: relative;
 }
 
+@media all and (min-width: 900px) {
+  .img-menu {
+    height: 500px;
+  }
+}
+
 .french {
   height: 1181px;
+}
+
+@media all and (min-width: 900px) {
+  .french {
+    height: 616px;
+  }
 }
 
 footer {
@@ -180,18 +402,33 @@ footer {
   height: 230px;
   position: absolute;
   top: 192%;
+  width: 100%;
 }
 
-footer .white-logo {
+@media all and (min-width: 992px) {
+  footer {
+    top: 162%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+footer h3 {
   color: white;
   margin-left: 5%;
   margin-top: 5%;
   width: 31%;
+  font-family: 'Shrikhand';
+  font-weight: 400;
 }
 
 @media all and (min-width: 992px) {
-  footer .white-logo {
-    height: 20%;
+  footer h3 {
+    font-size: 3em;
   }
 }
 
@@ -216,5 +453,11 @@ footer .food .fas {
 
 footer p {
   margin-left: 5%;
+}
+
+@media all and (min-width: 992px) {
+  footer p {
+    margin-top: 7%;
+  }
 }
 /*# sourceMappingURL=menu3.css.map */

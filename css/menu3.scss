@@ -8,12 +8,20 @@
     background-repeat: no-repeat;
     height: 249px;
     position: relative;
+    @media all and (min-width:900px) 
+    {
+            height: 500px;
+    }
 
 }
 
 .french
 {
     height: 1181px;
+    @media all and (min-width:900px) 
+    {
+            height: 616px;
+    }
 }
 
 @import 'footer';

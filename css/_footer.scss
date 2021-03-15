@@ -6,19 +6,28 @@ footer
     height: 230px;
     position: absolute;
     top:192%;
+    width: 100%;
+    @media all and (min-width: 992px) 
+    {
+        top: 162%;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
 
-    .white-logo
+    h3
     {
     color: white;
     margin-left: 5%;
     margin-top: 5%;
     width: 31%;
-
-    @media all and (min-width: 992px) 
-    {
-        height: 20%;
+    font-family:'Shrikhand';
+    font-weight: 400;
+        @media all and (min-width: 992px) 
+        {
+            font-size: 3em;
+        }  
     }
-    }   
     .food
     {
     display: flex;
@@ -38,5 +47,9 @@ footer
     p
     {
     margin-left: 5%;
+        @media all and (min-width: 992px) 
+        {
+            margin-top: 7%
+        }
     }    
 }
