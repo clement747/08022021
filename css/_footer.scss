@@ -2,14 +2,9 @@ footer
 {
     background-color:#353535;
     color: white;
-    margin-bottom: 5%;
     height: 230px;
-    position: absolute;
-    top:192%;
-    width: 100%;
     @media all and (min-width: 992px) 
     {
-        top: 162%;
         display: flex;
         flex-wrap: wrap;
         width: 100%;

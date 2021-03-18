@@ -1,5 +1,5 @@
 body {
-  margin: 5% 0%;
+  margin: 0%;
 }
 
 header {
@@ -34,16 +34,22 @@ header .logo {
   background-color: #f6f6f6;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  height: 1000px;
-  position: absolute;
-  top: 40%;
+  position: relative;
   width: 100%;
+  margin-top: -13%;
+  height: 1100px;
+  margin-bottom: -17px;
 }
 
 @media all and (min-width: 992px) {
   .french {
     top: 77%;
     height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -71,19 +77,27 @@ header .logo {
 }
 
 @media all and (min-width: 992px) {
+  .french .french__title .far {
+    top: 5%;
+  }
+}
+
+@media all and (min-width: 992px) {
   .french .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: 100%;
+    margin-top: -15%;
   }
 }
 
 @media all and (min-width: 992px) {
   .french .entered {
-    width: 25%;
     margin-left: 5%;
+    width: 25%;
   }
 }
 
@@ -131,6 +145,8 @@ header .logo {
   border-radius: 20px;
   position: relative;
   font-family: "Roboto";
+  overflow: hidden;
+  margin: 15px 0px 15px 17px;
 }
 
 .french .fade_1 {
@@ -322,7 +338,6 @@ header .logo {
 
 .french h3 {
   margin-left: 4%;
-  padding-top: 3%;
   font-size: 0.9em;
   padding-bottom: 10px;
 }
@@ -336,19 +351,65 @@ header .logo {
   font-size: 0.9em;
 }
 
+.french .french__price p:hover {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 222px;
+  white-space: nowrap;
+}
+
 .french .price {
   position: absolute;
-  top: 10%;
+  top: 33%;
   left: 85%;
 }
 
-.french .check-box {
+.french .price:active {
+  left: 70%;
+}
+
+.french .fas {
   position: absolute;
-  top: 24%;
-  left: 96%;
-  font-size: 1.5em;
+  top: 0%;
+  right: -59px;
+  font-size: 2em;
   color: white;
-  opacity: 0;
+  padding-top: 20px;
+  text-align: center;
+  -webkit-animation: reverse-checkbox 2s;
+          animation: reverse-checkbox 2s;
+}
+
+@-webkit-keyframes reverse-checkbox {
+  0% {
+    -webkit-transform: rotate(-360);
+            transform: rotate(-360);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes reverse-checkbox {
+  0% {
+    -webkit-transform: rotate(-360);
+            transform: rotate(-360);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+.french .fas:hover {
+  right: 0px;
+}
+
+.french .background__checkbox {
+  background: #99e2d0;
+  height: 50px;
+  width: 59px;
 }
 
 a {
@@ -367,6 +428,7 @@ a {
     margin-left: 50%;
     margin-left: 33%;
     font-size: 2em;
+    top: 348px;
   }
 }
 
@@ -388,16 +450,11 @@ a {
 footer {
   background-color: #353535;
   color: white;
-  margin-bottom: 5%;
   height: 230px;
-  position: absolute;
-  top: 192%;
-  width: 100%;
 }
 
 @media all and (min-width: 992px) {
   footer {
-    top: 162%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -449,9 +506,5 @@ footer p {
   footer p {
     margin-top: 7%;
   }
-}
-
-footer {
-  top: 190%;
 }
 /*# sourceMappingURL=menu4.css.map */

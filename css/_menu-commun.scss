@@ -1,8 +1,7 @@
 body
 {
-    margin: 5% 0%;
+    margin: 0%;
 }
-
 header
 {
     display: flex;
@@ -34,15 +33,18 @@ header
     background-color: #f6f6f6;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    height: 1000px;
-    position: absolute;
-    top: 40%;
+    position: relative;
     width: 100%;
+    margin-top: -13%;
+    height: 1100px;
+    margin-bottom: -17px;
 
     @media all and (min-width:992px) 
     {
             top: 77%;
             height: 600px;
+            display: flex;
+            flex-wrap: wrap;
     }
 
    
@@ -67,6 +69,10 @@ header
             left: 80%;
             top: 24%;
             font-size: 2em;
+            @media all and (min-width:992px) 
+            {
+                top: 5%;  
+            }
         }
     }
     
@@ -76,6 +82,8 @@ header
         {
                 display: flex;
                 flex-wrap: wrap;
+                width: 100%;
+                margin-top: -15%;
         }
 
     }
@@ -84,8 +92,9 @@ header
     {
         @media all and  (min-width: 992px)
         {
-            width: 25%;
+               
             margin-left : 5%;
+            width: 25%;
         }  
     }
 
@@ -142,6 +151,9 @@ header
         border-radius: 20px;
         position: relative;
         font-family: "Roboto";
+        overflow: hidden;
+        margin: 15px 0px 15px 17px;
+        
     }
   
     .fade_1
@@ -313,8 +325,7 @@ header
 
         h3
         {
-            margin-left: 4%;
-            padding-top: 3%; 
+            margin-left: 4%; 
             font-size: 0.9em;
             padding-bottom: 10px;
             
@@ -326,24 +337,69 @@ header
             margin-left: 4%;
             margin-top: -10%;
             font-size: 0.9em;
+
+            p:hover
+            {
+                text-overflow: ellipsis;
+                overflow: hidden;
+                width: 222px;
+                white-space: nowrap;
+            }
+
         }
+
 
         .price
         {
             position: absolute;
-            top: 10%;
+            top: 33%;
             left: 85%;
+
+            &:active
+            {
+                left: 70%;
+            }
+                       
         }
 
-        .check-box
+        .fas
         {
             position: absolute;
-            top: 24%;
-            left: 96%;
-            font-size: 1.5em;
+            top: 0%;
+            right: -59px;
+            font-size: 2em;
             color: white;
-            opacity: 0;
+            padding-top: 20px;
+            text-align: center;
+            animation:reverse-checkbox 2s;
+            @keyframes reverse-checkbox
+            {
+             0%
+             {
+                transform: rotate(-360);
+             }
+
+             100%
+             {
+                transform: rotate(0);
+             }
+            }
+
+            &:hover 
+            {
+                right: 0px;
+            }
         }
+
+    
+        .background__checkbox
+        {
+            background: #99e2d0;
+            height: 50px;
+            width: 59px;
+            }
+
+      
 }    
 
 a
@@ -362,5 +418,6 @@ a
         margin-left: 50%;
         margin-left: 33%;
         font-size: 2em;
+        top: 348px;
     }   
 }
