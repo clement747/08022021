@@ -107,6 +107,13 @@ header .logo {
   margin-left: 21px;
 }
 
+@media all and (min-width: 992px) {
+  .french .title {
+    width: 27%;
+    margin-left: 5%;
+  }
+}
+
 .french .box__dishes {
   width: 12.5%;
 }
@@ -117,14 +124,14 @@ header .logo {
 
 @media all and (min-width: 992px) {
   .french .dishes {
-    width: 25%;
+    width: 27%;
     margin-left: 5%;
   }
 }
 
 @media all and (min-width: 992px) {
   .french .Desserts {
-    width: 25%;
+    width: 27%;
     margin-left: 5%;
   }
 }
@@ -149,6 +156,78 @@ header .logo {
   margin: 15px 0px 15px 17px;
 }
 
+.french .french__descpription h3 {
+  margin-left: 4%;
+  font-size: 0.9em;
+  padding-bottom: 10px;
+  width: 290px;
+}
+
+.french .french__descpription .french__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 4%;
+  margin-top: -10%;
+  font-size: 0.9em;
+}
+
+.french .french__descpription .french__price p {
+  width: 290px;
+}
+
+.french .french__descpription .french__price .price {
+  position: absolute;
+  top: 33%;
+  left: 85%;
+}
+
+.french .french__descpription .french__price .fas {
+  position: absolute;
+  top: 0%;
+  right: -59px;
+  font-size: 2em;
+  color: white;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.french .french__descpription .french__price .background__checkbox {
+  background: #99e2d0;
+  height: 50px;
+  width: 59px;
+}
+
+.french .french__descpription .french__price:active h3 {
+  -webkit-transition: all 500ms linear;
+  transition: all 500ms linear;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 220px;
+  white-space: nowrap;
+}
+
+.french .french__descpription .french__price:active .fas {
+  -webkit-transition: all 500ms linear;
+  transition: all 500ms linear;
+  right: 0px;
+}
+
+.french .french__descpription .french__price:active p {
+  -webkit-transition: all 500ms linear;
+  transition: all 500ms linear;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 220px;
+  white-space: nowrap;
+}
+
+.french .french__descpription .french__price:active .price {
+  -webkit-transition: all 500ms linear;
+  transition: all 500ms linear;
+  left: 70%;
+}
+
 .french .fade_1 {
   -webkit-animation: fade-in 1s;
           animation: fade-in 1s;
@@ -158,6 +237,7 @@ header .logo {
   0% {
     -webkit-transform: scale(0, 1);
             transform: scale(0, 1);
+    margin-top: 10px;
   }
   100% {
     -webkit-transform: scale(100%);
@@ -169,6 +249,7 @@ header .logo {
   0% {
     -webkit-transform: scale(0, 1);
             transform: scale(0, 1);
+    margin-top: 10px;
   }
   100% {
     -webkit-transform: scale(100%);
@@ -334,82 +415,6 @@ header .logo {
     -webkit-transform: scale(100%);
             transform: scale(100%);
   }
-}
-
-.french h3 {
-  margin-left: 4%;
-  font-size: 0.9em;
-  padding-bottom: 10px;
-}
-
-.french .french__price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 4%;
-  margin-top: -10%;
-  font-size: 0.9em;
-}
-
-.french .french__price p:hover {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  width: 222px;
-  white-space: nowrap;
-}
-
-.french .price {
-  position: absolute;
-  top: 33%;
-  left: 85%;
-}
-
-.french .price:active {
-  left: 70%;
-}
-
-.french .fas {
-  position: absolute;
-  top: 0%;
-  right: -59px;
-  font-size: 2em;
-  color: white;
-  padding-top: 20px;
-  text-align: center;
-  -webkit-animation: reverse-checkbox 2s;
-          animation: reverse-checkbox 2s;
-}
-
-@-webkit-keyframes reverse-checkbox {
-  0% {
-    -webkit-transform: rotate(-360);
-            transform: rotate(-360);
-  }
-  100% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-}
-
-@keyframes reverse-checkbox {
-  0% {
-    -webkit-transform: rotate(-360);
-            transform: rotate(-360);
-  }
-  100% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-}
-
-.french .fas:hover {
-  right: 0px;
-}
-
-.french .background__checkbox {
-  background: #99e2d0;
-  height: 50px;
-  width: 59px;
 }
 
 a {

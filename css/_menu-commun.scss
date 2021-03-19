@@ -103,6 +103,11 @@ header
         border-bottom: 2px solid #99e2d0;
         width: 20%;
         margin-left:21px;
+        @media all and  (min-width: 992px)
+            {
+                width: 27%;
+                margin-left : 5%;
+            }  
         
     }
     .box__dishes
@@ -119,7 +124,7 @@ header
     {
         @media all and  (min-width: 992px)
             {
-                width: 25%;
+                width: 27%;
                 margin-left : 5%;
             }  
     } 
@@ -127,7 +132,7 @@ header
     {
         @media all and  (min-width: 992px)
             {
-                width: 25%;
+                width: 27%;
                 margin-left : 5%;
             }   
     }   
@@ -153,8 +158,90 @@ header
         font-family: "Roboto";
         overflow: hidden;
         margin: 15px 0px 15px 17px;
+
+        h3
+        {
+            margin-left: 4%; 
+            font-size: 0.9em;
+            padding-bottom: 10px; 
+            width: 290px;
+        }
+
+        .french__price
+        {
+            display: flex;
+            margin-left: 4%;
+            margin-top: -10%;
+            font-size: 0.9em;
+
+            p
+            {
+                width: 290px;
+            
+            }
+
+            .price
+            {
+                position: absolute;
+                top: 33%;
+                left: 85%;
+                        
+            }
+
+            .fas
+            {
+                position: absolute;
+                top: 0%;
+                right: -59px;
+                font-size: 2em;
+                color: white;
+                padding-top: 20px;
+                text-align: center;
+            }
+
         
-    }
+            .background__checkbox
+            {
+                background: #99e2d0;
+                height: 50px;
+                width: 59px;
+            }
+
+            &:active
+            {
+                h3
+                    {
+                        transition: all 500ms linear;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        width: 220px;
+                        white-space: nowrap;
+                    }
+        
+                .fas 
+                    {
+                        transition: all 500ms linear;
+                        right: 0px;
+                    } 
+                
+                    p
+                    {
+                        transition: all 500ms linear;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        width: 220px;
+                        white-space: nowrap;
+                    } 
+                
+                .price
+                    {
+                        transition: all 500ms linear;
+                        left: 70%;
+                    }  
+                
+            }
+        }    
+    }    
   
     .fade_1
     {
@@ -164,6 +251,7 @@ header
             0%
             {
                 transform: scale(0,1);
+                margin-top: 10px;
             }
             100%
             {
@@ -322,85 +410,8 @@ header
             }
         }    
     }
-
-        h3
-        {
-            margin-left: 4%; 
-            font-size: 0.9em;
-            padding-bottom: 10px;
-            
-        }
-
-        .french__price
-        {
-            display: flex;
-            margin-left: 4%;
-            margin-top: -10%;
-            font-size: 0.9em;
-
-            p:hover
-            {
-                text-overflow: ellipsis;
-                overflow: hidden;
-                width: 222px;
-                white-space: nowrap;
-            }
-
-        }
-
-
-        .price
-        {
-            position: absolute;
-            top: 33%;
-            left: 85%;
-
-            &:active
-            {
-                left: 70%;
-            }
-                       
-        }
-
-        .fas
-        {
-            position: absolute;
-            top: 0%;
-            right: -59px;
-            font-size: 2em;
-            color: white;
-            padding-top: 20px;
-            text-align: center;
-            animation:reverse-checkbox 2s;
-            @keyframes reverse-checkbox
-            {
-             0%
-             {
-                transform: rotate(-360);
-             }
-
-             100%
-             {
-                transform: rotate(0);
-             }
-            }
-
-            &:hover 
-            {
-                right: 0px;
-            }
-        }
-
-    
-        .background__checkbox
-        {
-            background: #99e2d0;
-            height: 50px;
-            width: 59px;
-            }
-
-      
 }    
+        
 
 a
 {
