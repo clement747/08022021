@@ -287,7 +287,6 @@ h2
     {
         opacity: 0;
         background: linear-gradient(#9356dc, #ff79da);
-        background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
         transition: opacity 300ms;  
@@ -311,7 +310,6 @@ h2
     top: 7%;
     width: 20%;
     padding: 10px;
-    font-weight: 800px;
  }
 }
 @import 'footer';
@@ -340,8 +338,8 @@ margin-bottom: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 1;
-    animation: loader-spinner ease-in-out;
+    transform: scale(0);
+    animation: desaspear forwards;
     animation-duration: 3s;
     animation-iteration-count:1;
 
@@ -374,16 +372,16 @@ margin-bottom: 0%;
     }
 }    
 
-    @keyframes loader-spinner
+    @keyframes desaspear
     {
         0%,99%
         {
-            opacity: 1;
+            transform:scale(1);
         }
 
         100%
         {
-            opacity: 0;
+            transform:scale(0);
         }
         
     }

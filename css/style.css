@@ -312,7 +312,6 @@ body {
   opacity: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background: linear-gradient(#9356dc, #ff79da);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   -webkit-transition: opacity 300ms;
@@ -331,7 +330,6 @@ body {
   top: 7%;
   width: 20%;
   padding: 10px;
-  font-weight: 800px;
 }
 
 footer {
@@ -422,9 +420,10 @@ footer h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: 1;
-  -webkit-animation: loader-spinner ease-in-out;
-          animation: loader-spinner ease-in-out;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation: desaspear forwards;
+          animation: desaspear forwards;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-iteration-count: 1;
@@ -470,21 +469,25 @@ footer h3 {
   }
 }
 
-@-webkit-keyframes loader-spinner {
+@-webkit-keyframes desaspear {
   0%, 99% {
-    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   100% {
-    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
 }
 
-@keyframes loader-spinner {
+@keyframes desaspear {
   0%, 99% {
-    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   100% {
-    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
 }
 
