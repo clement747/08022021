@@ -282,6 +282,7 @@ body {
       flex-wrap: wrap;
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 
 .restaurant .background__description h3 {

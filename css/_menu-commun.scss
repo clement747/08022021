@@ -11,6 +11,7 @@ header
         width: 50%;
         margin-left: 19%;
         padding-bottom: 10px;
+        padding-top: 10px;
 
         @media all and (min-width:992px) 
         {
@@ -68,10 +69,12 @@ header
 
         h1
         {
-            
+            width: 100%;
+            font-size: 1em;
             @media all and (min-width:992px) 
             {
                 width: 100%;
+                font-size: 1.5em;
             }
         }
         .empty
@@ -81,6 +84,10 @@ header
 
         .full
         {
+            position: absolute;
+            left:73%;
+            top: 3px;
+            font-size: 2.2em;
             @media all and (min-width:992px) 
             {
             position: absolute;
@@ -111,19 +118,21 @@ header
         .far
         {
             position: absolute;
-            left: 80%;
-            top: 24%;
+            left: 74%;
+            top: 18.7%;
             font-size: 2em;
+
             @media all and (min-width:992px) 
             { 
                 left: 80%;
-                top:5.7%;; 
+                top: 5.7%;; 
             }
         }
     }
     
     .menu
     {
+
             @media all and (min-width:992px) 
         {
                 display: flex;
@@ -224,9 +233,18 @@ header
 
             p
             {
-                width: 290px;
-            
-            }
+                width: 200px;
+                transition: all 500ms linear;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+
+                @media all and  (min-width: 992px)
+                    {
+                        width: 290px;
+                    }   
+
+            }   
 
             .price
             {
@@ -251,7 +269,7 @@ header
             .background__checkbox
             {
                 background: #99e2d0;
-                height: 70px;
+                height: 80px;
                 width: 59px;
                 position: absolute;
                 top: 0;
@@ -261,6 +279,9 @@ header
 
             &:hover
             {
+                
+                        box-shadow: 0 5px 15px 0 rgb(165, 165, 165);
+
                 h3
                     {
                         transition: all 500ms linear;
@@ -288,8 +309,17 @@ header
                         transition: all 500ms linear;
                         text-overflow: ellipsis;
                         overflow: hidden;
+                        width: 150px;
+                        white-space: nowrap;
+
+                        @media all and  (min-width: 992px)
+                        {
+                        transition: all 500ms linear;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
                         width: 220px;
                         white-space: nowrap;
+                        }   
                     } 
                 
                 .price
@@ -482,7 +512,7 @@ a
     border-radius: 50px;
     padding: 18px 37px;
     position: absolute;
-    left: 100px;
+    left: 73px;
     margin-top: 7%;
     font-family: 'Roboto';
 
@@ -492,5 +522,6 @@ a
         margin-left: 33%;
         font-size: 2em;
         top: 348px;
+        left: 100px;
     }   
 }
