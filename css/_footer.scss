@@ -3,6 +3,8 @@ footer
     background-color:#353535;
     color: white;
     height: 230px;
+    padding-bottom: 28px;
+    
     @media all and (min-width: 992px) 
     {
         display: flex;
@@ -28,6 +30,7 @@ footer
     display: flex;
     align-items: center;
     margin-left: 5%;
+    margin-bottom: -19px;
 
         p
             {

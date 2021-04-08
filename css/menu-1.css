@@ -468,6 +468,7 @@ footer {
   background-color: #353535;
   color: white;
   height: 230px;
+  padding-bottom: 28px;
 }
 
 @media all and (min-width: 992px) {
@@ -504,6 +505,7 @@ footer .food {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 5%;
+  margin-bottom: -19px;
 }
 
 footer .food p {
