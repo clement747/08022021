@@ -319,7 +319,7 @@ body {
   transition: opacity 300ms;
 }
 
-.restaurant .background__description .full:active {
+.restaurant .background__description .full:hover {
   opacity: 1;
 }
 

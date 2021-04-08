@@ -291,7 +291,7 @@ h2
         -webkit-background-clip: text;
         color: transparent;
         transition: opacity 300ms;  
-        &:active
+        &:hover
         {
             opacity: 1;
         }
