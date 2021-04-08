@@ -83,7 +83,13 @@ body {
 .reservation p {
   color: #7d7d7d;
   text-align: center;
-  font-size: 1em;
+  font-size: 0.8em;
+}
+
+@media all and (min-width: 992px) {
+  .reservation p {
+    font-size: 1em;
+  }
 }
 
 .reservation a {
@@ -93,12 +99,14 @@ body {
   border-radius: 50px;
   padding: 18px 37px;
   position: absolute;
-  left: 65px;
+  left: 33px;
+  -webkit-box-shadow: 0px 8px 7px -5px #d5d5d5;
+          box-shadow: 0px 8px 7px -5px #d5d5d5;
 }
 
 @media all and (min-width: 992px) {
   .reservation a {
-    left: 650px;
+    left: 630px;
   }
 }
 
@@ -178,8 +186,16 @@ body {
 
 .operation .operation__word {
   margin-left: 10%;
-  padding-top: 5.9%;
+  padding-top: 7.9%;
   color: black;
+  font-size: 0.8em;
+}
+
+@media all and (min-width: 992px) {
+  .operation .operation__word {
+    font-size: 1em;
+    padding-top: 5.9%;
+  }
 }
 
 .operation .fas {
@@ -437,7 +453,7 @@ footer h3 {
 .loader .lettre {
   color: white;
   font-size: 50px;
-  letter-spacing: 10px;
+  letter-spacing: 4px;
   margin-bottom: 150px;
   -webkit-animation: flash 1s linear infinite;
           animation: flash 1s linear infinite;

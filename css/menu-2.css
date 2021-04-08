@@ -40,7 +40,7 @@ header .logo {
   position: relative;
   width: 100%;
   margin-top: -13%;
-  height: 1100px;
+  height: 1260px;
   margin-bottom: -17px;
 }
 
@@ -550,16 +550,6 @@ a {
 @media all and (min-width: 900px) {
   .img-menu {
     height: 500px;
-  }
-}
-
-.french {
-  height: 1181px;
-}
-
-@media all and (min-width: 900px) {
-  .french {
-    height: 635px;
   }
 }
 
