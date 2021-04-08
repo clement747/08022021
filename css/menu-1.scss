@@ -6,13 +6,24 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 249px;
+    height: 300px;
     position: relative;
     @media all and (min-width:900px) 
     {
             height: 500px;
     }
-
+    
 }
-
+.french
+{
+    .french__title
+    {
+        .far 
+        {
+            left: 80%;
+            top: 2.7%;
+        }
+            
+    }
+} 
 @import 'footer';

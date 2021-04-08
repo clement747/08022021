@@ -63,9 +63,50 @@ header
         @media all and (min-width:992px) 
         {
                width: 93%;
+               flex-wrap: wrap;
         }
 
-        
+        h1
+        {
+            
+            @media all and (min-width:992px) 
+            {
+                width: 100%;
+            }
+        }
+        .empty
+        {
+            margin-top: 2%;
+        }
+
+        .full
+        {
+            @media all and (min-width:992px) 
+            {
+            position: absolute;
+            left:1128px;
+            top: 9px;
+            font-size: 2.2em;
+            }
+        }
+        .color
+        {
+            opacity: 0;
+            background: linear-gradient(#9356dc, #ff79da);
+            background-clip:text;
+            -webkit-background-clip: text;
+            color:transparent;
+            transition: opacity 300ms;  
+                &:hover
+                {
+                    opacity: 1;
+                } 
+        }
+
+        .fas
+        {
+            color: transparent;
+        }      
 
         .far
         {
@@ -74,8 +115,9 @@ header
             top: 24%;
             font-size: 2em;
             @media all and (min-width:992px) 
-            {
-                top: 5%;  
+            { 
+                left: 80%;
+                top:5.7%;; 
             }
         }
     }
@@ -162,6 +204,8 @@ header
         font-family: "Roboto";
         overflow: hidden;
         margin: 15px 0px 15px 17px;
+        box-shadow: 0 5px 15px 0 #c3c3c3;
+        cursor: pointer;
 
         h3
         {
@@ -213,8 +257,9 @@ header
                 top: 0;
                 right: -60px;
             }
+        }    
 
-            &:active
+            &:hover
             {
                 h3
                     {
@@ -253,8 +298,7 @@ header
                         left: 70%;
                     }  
                 
-            }
-        }    
+            }  
     }    
   
     .fade_1

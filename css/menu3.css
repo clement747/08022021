@@ -68,7 +68,47 @@ header .logo {
 @media all and (min-width: 992px) {
   .french .french__title {
     width: 93%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
+}
+
+@media all and (min-width: 992px) {
+  .french .french__title h1 {
+    width: 100%;
+  }
+}
+
+.french .french__title .empty {
+  margin-top: 2%;
+}
+
+@media all and (min-width: 992px) {
+  .french .french__title .full {
+    position: absolute;
+    left: 1128px;
+    top: 9px;
+    font-size: 2.2em;
+  }
+}
+
+.french .french__title .color {
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+
+.french .french__title .color:hover {
+  opacity: 1;
+}
+
+.french .french__title .fas {
+  color: transparent;
 }
 
 .french .french__title .far {
@@ -80,7 +120,8 @@ header .logo {
 
 @media all and (min-width: 992px) {
   .french .french__title .far {
-    top: 5%;
+    left: 80%;
+    top: 5.7%;
   }
 }
 
@@ -156,6 +197,9 @@ header .logo {
   font-family: "Roboto";
   overflow: hidden;
   margin: 15px 0px 15px 17px;
+  -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
+          box-shadow: 0 5px 15px 0 #c3c3c3;
+  cursor: pointer;
 }
 
 .french .french__descpription h3 {
@@ -204,7 +248,7 @@ header .logo {
   right: -60px;
 }
 
-.french .french__descpription .french__price:active h3 {
+.french .french__descpription:hover h3 {
   -webkit-transition: all 500ms linear;
   transition: all 500ms linear;
   text-overflow: ellipsis;
@@ -213,7 +257,7 @@ header .logo {
   white-space: nowrap;
 }
 
-.french .french__descpription .french__price:active .fas {
+.french .french__descpription:hover .fas {
   -webkit-transition: all 500ms linear;
   transition: all 500ms linear;
   right: 15px;
@@ -221,13 +265,13 @@ header .logo {
           transform: rotate(360deg);
 }
 
-.french .french__descpription .french__price:active .background__checkbox {
+.french .french__descpription:hover .background__checkbox {
   -webkit-transition: all 500ms linear;
   transition: all 500ms linear;
   right: 0px;
 }
 
-.french .french__descpription .french__price:active p {
+.french .french__descpription:hover p {
   -webkit-transition: all 500ms linear;
   transition: all 500ms linear;
   text-overflow: ellipsis;
@@ -236,7 +280,7 @@ header .logo {
   white-space: nowrap;
 }
 
-.french .french__descpription .french__price:active .price {
+.french .french__descpription:hover .price {
   -webkit-transition: all 500ms linear;
   transition: all 500ms linear;
   left: 70%;
@@ -464,16 +508,6 @@ a {
 @media all and (min-width: 900px) {
   .img-menu {
     height: 500px;
-  }
-}
-
-.french {
-  height: 1181px;
-}
-
-@media all and (min-width: 900px) {
-  .french {
-    height: 616px;
   }
 }
 
